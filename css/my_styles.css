@@ -1,0 +1,159 @@
+/*body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}*/
+
+div#header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #166f25;
+}
+
+div#header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+div#header li {
+    float: left;
+    margin:2em;
+}
+
+div#header li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+div#header li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: #04AA6D;
+}
+
+
+
+div#invisible-header {
+    width: 100%;
+    visibility: hidden;
+}
+
+div#header h2, div#invisible-header h2 {
+    font-family: Verdana, Geneva, sans-serif;
+    font-weight: 900;
+    color: white;
+    font-size: 2em;
+    margin-left: 2%;
+    padding: 0;
+}
+
+div#footer {
+    flex-grow: 1;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    background-color: #166f25;
+}
+
+.fter {
+    flex-grow: 1;
+}
+
+
+/*div#invisible-footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #166f25;
+}*/
+
+/*div#footer p, div#invisible-footer p {
+    font-family: Verdana, Geneva, sans-serif;
+    color: black;
+    font-size: 1em;
+    text-align: center;
+}*/
+
+div#navbar {
+    /*display: inline-block;*/
+    clear: both;
+    width:100;
+}
+
+div#pic {
+    width: 40%;
+    float: left;
+}
+
+div#content {
+    width: 60%;
+    float: right;
+}
+
+img {
+    padding-top: .5em;
+}
+
+p.aboutme {
+    font-family: Verdana, Geneva, sans-serif;
+    font-weight: 700;
+    text-align: justify;
+}
+
+p.projects {
+    font-family: Verdana, Geneva, sans-serif;
+    font-weight: 700;
+    text-align: justify;
+    padding: 1em 0 0 1em;
+}
+
+form {
+    width: 50%;
+    float: left;
+    margin: 2em 0 0 2em;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 1.25em;
+}
+
+input[type="text"], input[type="email"], textarea {
+    margin-bottom: .25em;
+    padding: .25em;
+    font-size: 1.25em;
+}
+
+input[type="submit"] {
+    font-size: 1.25em;
+}
+
+.whatsapp-btn-container {
+    position: absolute;
+    right: 30px;
+    bottom: 24px;
+    padding: 24px;
+}
+
+.whatsapp-btn-container .whatsapp-btn {
+    font-size: 48px;
+    color: #25dc66;
+
+}
+
+.whatsapp-btn-container span {
+    position: absolute;
+    top: 0;
+    left: 4px;
+    font-family: Verdana, Geneva, sans-serif;
+    font-weight: 600;
+}
