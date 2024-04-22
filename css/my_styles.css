@@ -103,20 +103,31 @@ div#content {
 }
 
 img {
-    padding-top: .5em;
+    padding: .5em;
+}
+
+p {
+    font-family: Verdana, Geneva, sans-serif;
+    text-align: justify;
+    padding: .5em;
+}
+
+p.no-wrap {
+    clear: both;
 }
 
 p.aboutme {
     font-family: Verdana, Geneva, sans-serif;
     font-weight: 700;
     text-align: justify;
+    padding: .5em;
 }
 
 p.projects {
     font-family: Verdana, Geneva, sans-serif;
     font-weight: 700;
     text-align: justify;
-    padding: 1em 0 0 1em;
+    padding: .5em;
 }
 
 form {
@@ -148,6 +159,68 @@ input[type="submit"] {
     font-size: 48px;
     color: #25dc66;
 
+}
+
+.whatsapp-btn-container span {
+    position: absolute;
+    top: 0;
+    left: 4px;
+    font-family: Verdana, Geneva, sans-serif;
+    font-weight: 600;
+}
+
+/* Add this CSS to make the header responsive */
+@media screen and (max-width: 600px) {
+    div#header {
+        position: fixed;
+    }
+    div#header ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    div#header li {
+        margin: 1em 0;
+    }
+}
+
+div#invisible-header {
+    width: 100%;
+    visibility: hidden;
+}
+
+div#invisible-header ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+div#invisible-header li {
+    margin: 1em 0;
+}
+
+img {
+    width: 100%;
+}
+
+
+@media screen and (max-width: 600px) {
+    div#footer {
+        position: fixed;
+    }
+}
+
+
+.whatsapp-btn-container {
+    position: fixed;
+    right: 30px;
+    bottom: 24px;
+    padding: 24px;
+    z-index: 1000; 
+}
+
+.whatsapp-btn-container .whatsapp-btn {
+    font-size: 48px;
+    color: #25dc66;
 }
 
 .whatsapp-btn-container span {
